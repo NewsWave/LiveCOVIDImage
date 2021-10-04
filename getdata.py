@@ -20,7 +20,9 @@ file=open("datatoday.csv","w")
 file.write("Today,new_pos,new_good,new_death,total_pos,total_death\n")
 dataline=today+","+new_pos+","+new_good+","+new_death+","+total_pos+","+total_death
 print(dataline)
+#Printing the deadline
 file.write(dataline)
+#Closing File
 file.close()
 
 
