@@ -15,7 +15,9 @@ if date[6]=="9":
     month="iema;eïn¾ "
 
 today="2021 "+month+date[-2:]
+#showing date
 print(month, date[-2:])
+#save file
 file=open("datatoday.csv","w")
 file.write("Today,new_pos,new_good,new_death,total_pos,total_death\n")
 dataline=today+","+new_pos+","+new_good+","+new_death+","+total_pos+","+total_death
