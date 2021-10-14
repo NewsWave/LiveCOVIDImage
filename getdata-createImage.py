@@ -30,10 +30,23 @@ new_good=numConvert(data["local_recovered"])
 active_cases=numConvert(data["local_active_cases"])
 
 date=full_date[:10]
+
+"""
 if date[6]=="8":
     month="wf.daia;= "
 if date[6]=="9":
     month="iema;eïn¾ "
+if date[5:7]=="10":
+    month="Tlaf;dan¾ "
+if date[5:7]=="11":
+    month="fkdjeïn¾ "
+if date[5:7]=="12":
+    month="foieïn¾ "
+"""
+
+months = ["ckjdrs ","fmnrjdrs ","udra;= ","wfma%,a ","uehs ","cqks ","cQ,s ","wf.daia;= ","iema;eïn¾ ","Tlaf;dan¾ ","fkdjeïn¾ ","foieïn¾ "]
+
+month = months[int(date[5:7])-1]
 
 today="2021 "+month+date[-2:]
 file=open("datatoday.csv","w")

@@ -66,6 +66,10 @@ if date[5:7]=="11":
 if date[5:7]=="12":
     month="foieïn¾ "
 
+
+months = ["ckjdrs ","fmnrjdrs ","udra;= ","wfma%,a ","uehs ","cqks ","cQ,s ","wf.daia;= ","iema;eïn¾ ","Tlaf;dan¾ ","fkdjeïn¾ ","foieïn¾ "]
+month = months[int(date[5:7])-1]
+
 today="2021 "+month+date[-2:]
 file=open("datatoday.csv","w")
 file.write("Today,new_pos,new_good,new_death,total_pos,total_death\n")
