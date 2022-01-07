@@ -55,21 +55,6 @@ new_good=numConvert(data["local_recovered"])
 
 date=full_date[:10]
 print(date)
-
-if date[6]=="1":
-    month="ckjdß"
-if date[6]=="2":
-    month="fmnrjdß "
-if date[6]=="3":
-    month="ud¾;= "
-if date[6]=="4":
-    month="wfma%,a "
-if date[6]=="5":
-    month="uehs "
-if date[6]=="6":
-    month="cqks "
-if date[6]=="7":
-    month="cq,s "
 if date[6]=="8":
     month="wf.daia;= "
 if date[6]=="9":
@@ -81,11 +66,7 @@ if date[5:7]=="11":
 if date[5:7]=="12":
     month="foieïn¾ "
 
-
-
-year=full_date[0:4]
-
-today=year+" "+month+date[-2:]
+today="2021 "+month+date[-2:]
 file=open("datatoday.csv","w")
 file.write("Today,new_pos,new_good,new_death,total_pos,total_death\n")
 dataline=today+","+new_pos+","+new_good+","+new_death+","+total_pos+","+total_death
